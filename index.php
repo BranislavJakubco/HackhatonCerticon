@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
+    $jmeno = $_POST['jmeno'];
+    $heslo = $_POST['heslo'];
+   if ($jmeno == "admin" && $heslo == "admin") {
+    $_SESSION['login'] = 1;  
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
