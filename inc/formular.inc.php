@@ -2,10 +2,10 @@
         <div class="col-sm-12">
                 <form class="formstyle" action="./PHP/insert.inc.php" method="post">
                         <h1 style="margin-bottom: 6%; text-align: center;" class="textik">Kontaktujte nás!</h1>
-                        <input name="name" type="text" class="kontakt-input" placeholder="Jméno"/>
-                        <input name="lokalita" type="text" class="kontakt-input" placeholder="Lokalita" /> <br>
-                        <input name="school" type="text" class="kontakt-input" placeholder="Škola" /> <br>
-                        <input name="yearEND" type="text" class="kontakt-input" placeholder="Rok ukončení" /> <br>
+                        <input name="name" type="text" class="kontakt-input" placeholder="Jméno *"/>
+                        <input name="lokalita" type="text" class="kontakt-input" placeholder="Lokalita *" /> <br>
+                        <input name="school" type="text" class="kontakt-input" placeholder="Škola *" /> <br>
+                        <input name="yearEND" type="text" class="kontakt-input" placeholder="Rok ukončení *" /> <br>
 
                         
                         <div class="kontakt-input">
