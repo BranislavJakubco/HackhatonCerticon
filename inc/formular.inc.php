@@ -18,7 +18,7 @@
                         
 
                         <input name="jazyk" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" /> <br>
-                        <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie" /> <br>
+                        <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie *" /> <br>
 
                         <div class="kontakt-input">
                                 <input name="java" type="checkbox" required/> Souhlasím se zpracováním GDPR<br>
@@ -28,4 +28,4 @@
                         <input type="submit" value="Odeslat" />
                 </form>
         </div>
-        </div>
+</div>
