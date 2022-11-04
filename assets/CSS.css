@@ -7,5 +7,10 @@ body {
 }
 
 .background1{
-    
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    right: 50%;
 }
