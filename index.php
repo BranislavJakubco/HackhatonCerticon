@@ -7,6 +7,15 @@ if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
   $_SESSION['login'] = 1;  
   }
 
+$sp = mysqli_connect("localhost","root","","udaje");
+mysqli_query($sp, "SET NAMES'utf8';");
+
+
+$dotaz="SELECT * from jmeno-tabulky";
+$data= mysqli_query($sp,$dotaz);
+echo mysqli_error($sp);
+mysqli_close($sp);
+
 
   
 }
@@ -21,7 +30,8 @@ if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="assets/CSS.css">
-    <title>MakejvIT</title>
+
+  <title>MakejvIT</title>
 </head>
 <body>
     
