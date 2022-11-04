@@ -31,10 +31,9 @@ mysqli_close($sp);
   <title>MakejvIT</title>
 </head>
 <body>
-    
-<div class="bodya">
+
     <div class="row">
-        <div class="col-sm-12">
+      <div class="col-sm-12">
                 <?php
                 include("./inc/rozcestnik.inc.php");
                 ?>
@@ -46,7 +45,10 @@ mysqli_close($sp);
                 ?>
          
         </div>
-    </div></div>
+        <?php
+                include("./inc/footer.inc.php");
+                ?>
+    </div>
 
 </body>
 </html>

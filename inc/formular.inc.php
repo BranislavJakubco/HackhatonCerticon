@@ -1,6 +1,6 @@
-<div class="row container" style="margin-left: 10%">
+<div class="row container">
         <div class="col-sm-12">
-                <form class="formstyle" action="./PHP/insert.inc.php" method="post">
+                <form class="formstyle " action="./PHP/insert.inc.php" method="post">
                         <h1 style="margin-bottom: 6%; text-align: center;" class="textik">Kontaktujte nás!</h1>
                         <input name="name" type="text" class="kontakt-input" placeholder="Jméno *" required/>
                         <input name="lokalita" type="text" class="kontakt-input" placeholder="Lokalita *" required/> <br>
