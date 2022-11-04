@@ -1,7 +1,11 @@
+
 <?php
 
 while ($zaznam = mysqli_fetch_assoc($data)) {
-      echo '<div class="panel panel-default">';
+      echo '<div class="container">';
+      echo '<div class="row">';
+      echo '<div class=" col-sm-4">';
+      echo '<div class="panel panel-default";>';
       echo '<div class="panel-heading">';
       echo "ID: {$zaznam["id_studenta"]}";
       echo '</div>';
@@ -21,3 +25,4 @@ while ($zaznam = mysqli_fetch_assoc($data)) {
 
       }
       ?>
+    </div>
