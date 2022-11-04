@@ -6,19 +6,16 @@ if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
  if ($jmeno == "admin" && $heslo == "admin") {
   $_SESSION['login'] = 1;  
   }
-
+}
 $sp = mysqli_connect("localhost","root","","udaje");
 mysqli_query($sp, "SET NAMES'utf8';");
 
 
-$dotaz="SELECT * from jmeno-tabulky";
+$dotaz="SELECT * from udaje";
 $data= mysqli_query($sp,$dotaz);
 echo mysqli_error($sp);
 mysqli_close($sp);
 
-
-  
-}
 ?>
 <!DOCTYPE html>
 <html lang="cs">
