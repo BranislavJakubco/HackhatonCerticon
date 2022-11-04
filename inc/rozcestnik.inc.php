@@ -1,8 +1,8 @@
 <div class="row">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-dark" >
         <div class="container-fluid">
-            <div class="navbar-header" style="margin-left: 10%;">
-                <a class="navbar-brand" href="#">MakejvIT</a>
+            <div class="navbar-header" style="margin-left: 10%;" >
+                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;">MakejvIT</a>
             </div>
             <ul class="nav navbar-nav" style="float: right; margin-right: 10%;">
                 <li class="active"><a href="index.php?stranka=main">Domů</a></li>
