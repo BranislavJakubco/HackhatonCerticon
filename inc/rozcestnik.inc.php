@@ -2,7 +2,7 @@
     <nav class="navbar navbar-dark" >
         <div class="container-fluid">
             <div class="navbar-header" style="margin-left: 10%;" >
-                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;">MakejvIT</a>
+                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;">Makej v IT</a>
             </div>
             <ul class="nav navbar-nav" style="float: right; margin-right: 10%;">
                 <li class="active"><a href="index.php?stranka=main">Domů</a></li>
