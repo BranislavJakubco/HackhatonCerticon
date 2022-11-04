@@ -1,4 +1,7 @@
-.test {
-background-color: aliceblue;
-text-align: center;
+body {
+    background-image: url("...assets/img/1.jpg");  
+    background-size: cover;
+}
+.textcenter {
+    text-align: center;
 }
