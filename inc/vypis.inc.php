@@ -1,19 +1,6 @@
 
 <?php
-$sp = mysqli_connect("localhost", "root", "", "udaje");
 
-if ( isset($_GET['upravit']) ) {
-      $dotaz = "SELECT * FROM udaje WHERE id_studenta='{$_GET['id_studenta']}'";
-      $result = mysqli_query($sp, $dotaz);
-      $row = mysqli_fetch_array($result);
-    
-      $jmeno=$row['jmeno'];
-      $lokalita=$row['lokalita'];
-      $skola=$row['skola'];
-      $rok_ukonceni=$row['rok_ukonceni'];
-      $programovaci_jazky=$row['programovaci_jazyky'];
-      $preferovane_technologie=$row['preferovane_technologie'];
-    }
 while ($zaznam = mysqli_fetch_assoc($data)) {
       echo '<div class="container">';
       echo '<div class="row">';
