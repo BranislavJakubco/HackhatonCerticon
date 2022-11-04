@@ -1,20 +1,13 @@
 <div class="row">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-dark" >
         <div class="container-fluid">
-            <div class="navbar-header" style="margin-left: 10%;">
-                <a class="navbar-brand" href="#">MakejvIT</a>
+            <div class="navbar-header" style="margin-left: 10%;" >
+                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;">Makej v IT</a>
             </div>
             <ul class="nav navbar-nav" style="float: right; margin-right: 10%;">
                 <li class="active"><a href="index.php?stranka=main">Domů</a></li>
                 <li><a href="index.php?stranka=formular">Formulář</a></li>
-                <?php
-        if(isset($_SESSION['login']) && $_SESSION['login']!=1){
-            echo '
-            <li><a href="index.php?stranka=login">Login</a></li>;
-            ';}
-
-            ?>
-                <li><a href="index.php?stranka=login">Login</a></li>
+        
                 <?php
         if(isset($_SESSION['login']) && $_SESSION['login']==1){
             echo '
@@ -29,7 +22,25 @@
                         </ul>
                     </div>
                 </li>';
-                echo "<a href='PHP/logout.php'>Odhlásit se</a>";
+                echo "<li><a href='PHP/logout.php'>Odhlásit se</li></a>";
+            }
+            
+            else {
+
+                echo '
+                <li class="nav-item">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+                </a>
+                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+                    <form class="form-horizontal" method="post" accept-charset="UTF-8">
+                    Jméno: <br><input type="text" name="jmeno"> <br> 
+                Heslo: <br><input type="password" name="heslo"> <br>
+                        <input class="btn btn-primary" type="submit" name="submit" value="Login" />
+                    </form>
+                </div>
+            </li>
+                ';  
             };
 
             ?>
