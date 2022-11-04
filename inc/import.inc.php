@@ -1,3 +1,4 @@
+<div class="container" style="color: white;">
 <h2>Import tabulky</h2>
     
     <div class="outer-container">
@@ -9,12 +10,13 @@
                 <button type="submit" id="submit" name="import"
                     class="btn-submit">Importovat</button>
             </div>      
-        </form>     
+        </form>
     </div>
+   
     <div id="response" class="<?php if(!empty($type)) { echo $type . " display-block"; } ?>"><?php if(!empty($message)) { echo $message; } ?></div>
     
          
-<?php
+<!-- <?php /*
 $db = mysqli_connect("localhost", "root", "", "udaje");
 mysqli_query($db, "SET NAMES 'utf8'");
 
@@ -129,4 +131,4 @@ if (isset($_POST["import"])) {
         $message = "Invalid File Type. Upload Excel File.";
     }
 }
-?>
+*/?>--></div>
