@@ -11,5 +11,21 @@
 </head>
 <body>
     
+<div class="bodya">
+    <div class="row">
+        <div class="col-sm-12">
+                <?php
+                include("./inc/rozcestnik.inc.php");
+                ?>
+        </div></div>
+        <div class="row">
+           
+                <?php
+                include("./PHP/inc.sec.php");
+                ?>
+         
+        </div>
+    </div></div>
+
 </body>
 </html>
