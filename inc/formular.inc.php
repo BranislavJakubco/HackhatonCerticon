@@ -16,7 +16,7 @@
                                 <input name="cSharp" type="checkbox"/> C#<br> 
                         </div>
                         
-
+                        
                         <input name="jazyk" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" /> <br>
                         <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie *" /> <br>
 
