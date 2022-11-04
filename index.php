@@ -1,11 +1,23 @@
 <?php
-  session_start();
-  if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
-    $jmeno = $_POST['jmeno'];
-    $heslo = $_POST['heslo'];
-   if ($jmeno == "admin" && $heslo == "admin") {
-    $_SESSION['login'] = 1;  
-    }
+session_start();
+if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
+  $jmeno = $_POST['jmeno'];
+  $heslo = $_POST['heslo'];
+ if ($jmeno == "admin" && $heslo == "admin") {
+  $_SESSION['login'] = 1;  
+  }
+
+$sp = mysqli_connect("localhost","root","","jmeno-databaze");
+mysqli_query($sp, "SET NAMES'utf8';");
+
+
+$dotaz="SELECT * from jmeno-tabulky";
+$data= mysqli_query($sp,$dotaz);
+echo mysqli_error($sp);
+mysqli_close($sp);
+
+
+  
 }
 ?>
 <!DOCTYPE html>
