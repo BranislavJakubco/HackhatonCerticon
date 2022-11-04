@@ -5,11 +5,11 @@ if (isset($_POST['jmeno']) && isset($_POST['heslo'])) {
   $heslo = $_POST['heslo'];
  if ($jmeno == "admin" && $heslo == "admin") {
   $_SESSION['login'] = 1;  
-  }
-
-
-  
+  } 
 }
+
+$sp = mysqli_connect("localhost", "root", "", "udaje");
+mysqli_query($sp, "SET NAMES 'utf8';");
 ?>
 <!DOCTYPE html>
 <html lang="cs">
