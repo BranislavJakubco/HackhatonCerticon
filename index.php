@@ -46,7 +46,7 @@ mysqli_close($sp);
          
         </div>
         <?php
-                include("./inc/footer.inc.php");
+               // include("./inc/footer.inc.php");
                 ?>
     </div>
 
