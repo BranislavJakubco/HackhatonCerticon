@@ -7,6 +7,13 @@
             <ul class="nav navbar-nav" style="float: right; margin-right: 10%;">
                 <li class="active"><a href="index.php?stranka=main">Domů</a></li>
                 <li><a href="index.php?stranka=formular">Formulář</a></li>
+                <?php
+        if(isset($_SESSION['login']) && $_SESSION['login']!=1){
+            echo '
+            <li><a href="index.php?stranka=login">Login</a></li>;
+            ';}
+
+            ?>
                 <li><a href="index.php?stranka=login">Login</a></li>
                 <?php
         if(isset($_SESSION['login']) && $_SESSION['login']==1){
@@ -22,7 +29,9 @@
                         </ul>
                     </div>
                 </li>';
+                echo "<a href='PHP/logout.php'>Odhlásit se</a>";
             };
+
             ?>
                 
     </nav>
