@@ -1,5 +1,5 @@
 <div class="row">
-    <nav class="navbar navbar-dark" >
+    <nav class="navbar navbar-dark">
         <div class="container-fluid">
             <div class="navbar-header" style="margin-left: 10%;" >
                 <a class="navbar-brand" href="index.php?stranka=main" style="color: white;">Makej v IT</a>
@@ -44,8 +44,9 @@
             };
 
             ?>
-                
+            
     </nav>
+    <hr>  
 </div>
 
 
