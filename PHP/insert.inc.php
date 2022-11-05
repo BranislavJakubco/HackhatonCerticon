@@ -157,30 +157,35 @@ if (isset($_POST['Python'])) {
   echo "<p>Error: " . $dotaz . "<br>" . $conn->error."</p>";
 }
 }
-if (isset($_POST['C++'])) {
+if (isset($_POST['CPlus'])) {
 
-    $jazyk = $_REQUEST['C++'];
-    $dotaz2="SELECT id_jazyka from jazyky where jazyk = 'C++'";
+    $jazyk = $_REQUEST['CPlus'];
+    $dotaz2="SELECT id_jazyka from jazyky where jazyk = 'CPlus'";
     $sql = "SELECT id_studenta from udaje where email = '$email'";
     echo $sql;
     $jazyk_data=mysqli_query($conn,$dotaz2);
+    echo mysqli_error($sp);
     $student_data=mysqli_query($conn,$sql);
+    echo mysqli_error($sp);
     $jazyk_id=0;
     $student_id=0;
     if ($jazyk_data) {
          $row = mysqli_fetch_row($jazyk_data) ;
           $jazyk_id=$row[0];
+          echo mysqli_error($sp);
           #echo $row[0];
      }
      if ($student_data) {
         $row = mysqli_fetch_row($student_data) ;
           $student_id=$row[0];
+          echo mysqli_error($sp);
        echo $row[0];
     } 
     #echo $student_id;
     
     $dotaz="INSERT INTO udaje_o_jazycích values ('$jazyk_id','$student_id')";
-    
+    $data=mysqli_query($conn,$dotaz);
+    echo mysqli_error($sp);
    echo "<p>$dotaz</p>";
 
    # $data=mysqli_query($conn,$dotaz2);

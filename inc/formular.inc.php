@@ -3,6 +3,7 @@
                 <form class="formstyle " action="./PHP/insert.inc.php" method="post">
                         <h1 style="margin-bottom: 6%; text-align: center;" class="textik">Kontaktujte nás!</h1>
                         <input name="name" type="text" class="kontakt-input" placeholder="Jméno *" required/>
+                        <input name="email" type="text" class="kontakt-input" placeholder="Email *" required/>
                         <input name="lokalita" type="text" class="kontakt-input" placeholder="Lokalita *" required/> <br>
                         <input name="school" type="text" class="kontakt-input" placeholder="Škola *" required/> <br>
                         <input name="yearEND" type="text" class="kontakt-input" placeholder="Rok ukončení *" required/> <br>
@@ -13,7 +14,7 @@
                                 <input name="Java" type="checkbox" class="textik" /> Java<br>
                                 <input name="Python" type="checkbox" class="textik"/> Python<br> 
                                 <input name="CSharp" type="checkbox" class="textik"/> C#<br> 
-                                <input name="C++" type="checkbox" class="textik"/> C++<br> 
+                                <input name="CPlus" type="checkbox" class="textik"/> C++<br> 
                                 
                         </div>
                         
