@@ -12,3 +12,4 @@
 	else
 		echo('Neplatný parametr aa.');
         ?>
+		

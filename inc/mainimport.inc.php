@@ -1,3 +1,4 @@
+<div class="container" style="color: white;">
 <?php
 // Load the database configuration file
 include_once 'dbconf.php';
@@ -38,8 +39,8 @@ if(isset($_POST['importSubmit'])){
                 }
                 else{
                 // Check whether member already exists in the database with the same email
-                $prevQuery = "SELECT id FROM members WHERE email = '".$line[1]."'";
-                $prevResult = $db->query($prevQuery);
+                //$prevQuery = "SELECT id FROM members WHERE email = '".$line[1]."'";
+                //$prevResult = $db->query($prevQuery);
                 
                 // if($prevResult->num_rows > 0){
                 //     // Update member data in the database
@@ -77,6 +78,7 @@ if(isset($_POST['importSubmit'])){
                            
                             $jditam="UPDATE udaje set ostatni_jazyky='$zaznam' where id_studenta=$student_id";
                             $funguj=mysqli_query($db,$jditam);
+                            echo 'Úspěšně vloženo';
                         }    
                     }
                 }                   
@@ -87,3 +89,5 @@ if(isset($_POST['importSubmit'])){
 }
     }
 }
+?>
+</div>
