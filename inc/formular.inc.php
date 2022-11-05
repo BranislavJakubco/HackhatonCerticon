@@ -19,7 +19,7 @@ body {
                         <input name="email" type="text" class="kontakt-input" placeholder="Email *" required />
                         <input name="lokalita" type="text" class="kontakt-input" placeholder="Lokalita *" required /> <br>
                         <input name="school" type="text" class="kontakt-input" placeholder="Škola *" required /> <br>
-                        <input name="yearEND" type="text" class="kontakt-input" placeholder="Rok ukončení *" required /> <br>
+                        <input name="yearEND" type="text" class="kontakt-input" placeholder="Rok ukončení SŠ*" required /> <br>
 
 
                         <div class="kontakt-input">
