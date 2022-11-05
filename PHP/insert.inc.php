@@ -18,26 +18,15 @@ $email = $_REQUEST['email'];
 $lokalita = $_REQUEST['lokalita'];
 $skola = $_REQUEST['school'];
 $rok_ukonceni = $_REQUEST['yearEND'];
-$jazyk = $_REQUEST['jazyk'];
+$ostatni_jazyky = $_REQUEST['jazyk1'];
 $preferovane_technologie = $_REQUEST['prefTechnology'];
-$dotaz4 = "INSERT INTO jazyky (jazyk) values('$jazyk')";
-    $data4=mysqli_query($conn,$dotaz4);
-    echo mysqli_error($conn);
-    $dotaz5 = "INSERT INTO udaje(jmeno,email,lokalita,skola,rok_ukonceni,preferovane_technologie) VALUES ('$jmeno',
+
+    $dotaz5 = "INSERT INTO udaje(jmeno,email,lokalita,skola,rok_ukonceni,preferovane_technologie,ostatni_jazyky) VALUES ('$jmeno',
     '$email',
-    '$lokalita','$skola','$rok_ukonceni','$preferovane_technologie')";
+    '$lokalita','$skola','$rok_ukonceni','$preferovane_technologie','$ostatni_jazyky')";
    $data5=mysqli_query($conn,$dotaz5);
     echo mysqli_error($conn);
-    $jinej = "SELECT id_studenta from udaje where email = '$email'";
-    $student_data=mysqli_query($conn,$jinej);
-    $student_id=0;
-    if ($student_data) {
-        $row = mysqli_fetch_row($student_data) ;
-          $student_id=$row[0];
-       #echo $row[0];
-    } 
-    $dotaz="INSERT INTO udaje_o_jazycích values ('$jazyk','$student_id')";
-    $data_imp=mysqli_query($conn,$dotaz);
+
 if (isset($_POST['Java'])) {
     
     $jazyk = $_POST['Java'];

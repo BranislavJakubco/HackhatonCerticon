@@ -32,7 +32,7 @@ body {
                         </div>
 
 
-                        <input name="jazyk" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" /> <br>
+                        <input name="jazyk1" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" /> <br>
                         <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie *" required /> <br>
 
                         <div class="kontakt-input">
