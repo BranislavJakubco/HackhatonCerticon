@@ -1,3 +1,4 @@
+<div class="container">
 <?php
 // Load the database configuration file
 include_once 'dbconf.php';
@@ -40,7 +41,7 @@ if(!empty($_GET['status'])){
     </div>
     <!-- CSV file upload form -->
     <div class="col-md-12" id="importFrm" style="display: none;">
-        <form action="main_import.inc.php" method="post" enctype="multipart/form-data">
+        <form action="index.php?stranka=mainimport" method="post" enctype="multipart/form-data">
             <input type="file" name="file" />
             <input type="submit" class="btn btn-primary" name="importSubmit" value="IMPORT">
         </form>
@@ -85,8 +86,7 @@ function formToggle(ID){
     }
 }
 </script>
-
-         
+</div>
 
 
 

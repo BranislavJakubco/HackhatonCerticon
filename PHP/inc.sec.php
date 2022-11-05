@@ -10,5 +10,5 @@
 			echo('Podstránka nenalezena');
 	}
 	else
-		echo('Neplatný parametr.');
+		echo('Neplatný parametr aa.');
         ?>

@@ -41,7 +41,7 @@ li a {
                         <ul class="dropdown-menu">
                             <li><a href="index.php?stranka=vypis">Zobrazení</a></li>
                             <li><a href="index.php?stranka=editdatabase">Edit</a></li>
-                            <li><a href="./import/import.inc.php">Import</a></li>
+                            <li><a href="index.php?stranka=import">Import</a></li>
                         </ul>
                     </div>
                 </li>';
