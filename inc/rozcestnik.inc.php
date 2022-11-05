@@ -22,13 +22,13 @@ li a {
 </html>
 
 <div class="row">
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark" style="background-color: #777777;">
         <div class="container-fluid">
             <div class="navbar-header" style="margin-left: 10%;" >
-                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;"><img src="assets/img/logo.png" alt="logo" style="width:150px;height:50px; margin-top: -7%"></a>
+                <a class="navbar-brand" href="index.php?stranka=main" ><img src="assets/img/logo.png" alt="logo" style="width:150px;height:50px; margin-top: -11%"></a>
             </div>
-            <ul class="nav navbar-nav" style="float: right; margin-right: 10%; margin-right: 10%; margin-top: 1px;">
-                <li class="active"><a href="index.php?stranka=main">Domů</a></li>
+            <ul class="nav navbar-nav" style="float: right; margin-right: 10%; ">
+                <li class="active" style=""><a href="index.php?stranka=main">Domů</a></li>
                 <li><a href="index.php?stranka=formular">Formulář</a></li>
         
                 <?php
@@ -68,11 +68,8 @@ li a {
 
             ?>
             
-    </nav>
-    <hr>  
+    </nav> 
 </div>
-
-
 </div>
 </div>
 

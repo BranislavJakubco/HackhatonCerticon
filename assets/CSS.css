@@ -15,6 +15,7 @@ body {
 
 
 
+
 .kontakt-input {
     color: rgb(255, 255, 255);
     font-family: Helvetica, Arial, sans-serif;
@@ -29,6 +30,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     outline: 0;
+
+    
 }
 
 .kontakt-input:focus {
@@ -64,6 +67,12 @@ textarea {
     color: rgb(153, 153, 153);
 }
 
+::placeholder{
+    text-align: center;
+}
+
 .textik {
     color: rgb(216, 216, 216);
+    text-align: center;
 }
+
