@@ -1,5 +1,18 @@
-<div class="row container">
-        <div class="col-sm-12" style="margin-left: 20vw;">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+</body>
+</html>
+<div class="row container" style="display: inline-block;">
+        <div class="col-sm-12">
                 <form class="formstyle mid" action="./PHP/insert.inc.php" method="post">
                         <h1 style="margin-bottom: 6%; text-align: center;" class="textik">Kontaktujte nás!</h1>
                         <input name="name" type="text" class="kontakt-input" placeholder="Jméno *" required />
