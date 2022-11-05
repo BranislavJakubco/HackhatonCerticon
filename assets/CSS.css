@@ -7,26 +7,15 @@ body {
     text-align: center;
 }
 
-.background1{
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 10px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    right: 50%;
-}
-
 .formstyle {
     padding: 1%;
-    background-color: rgba(253, 253, 253, 0.188);
     border-radius: 25px;
-
  }
 
 
 
 .kontakt-input {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
     border-radius: 5px;
@@ -68,4 +57,12 @@ textarea {
 
 [type="submit"]:hover {
     background: #CC4949;
+}
+
+::placeholder, .textik {
+    color: rgb(153, 153, 153);
+}
+
+.textik {
+    color: rgb(216, 216, 216);
 }

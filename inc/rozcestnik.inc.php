@@ -1,8 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+
 <div class="row">
-    <nav class="navbar navbar-dark" >
+    <nav class="navbar navbar-dark">
         <div class="container-fluid">
             <div class="navbar-header" style="margin-left: 10%;" >
-                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;">Makej v IT</a>
+                <a class="navbar-brand" href="index.php?stranka=main" style="color: white;"><img src="assets/img/logo.png" alt="logo" style="width:150px;height:50px; margin-top: -7%"></a>
             </div>
             <ul class="nav navbar-nav" style="float: right; margin-right: 10%;">
                 <li class="active"><a href="index.php?stranka=main">Domů</a></li>
@@ -44,8 +71,9 @@
             };
 
             ?>
-                
+            
     </nav>
+    <hr>  
 </div>
 
 
