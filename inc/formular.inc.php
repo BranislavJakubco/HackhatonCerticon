@@ -36,7 +36,7 @@ body {
                         <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie *" required /> <br>
 
                         <div class="kontakt-input">
-                                <input name="java" type="checkbox" required /> Souhlasím se zpracováním GDPR<br>
+                                <input name="GDPR" type="checkbox" required/> Souhlasím se zpracováním GDPR<br>
                         </div>
 
 
