@@ -30,11 +30,8 @@ body {
                                 <input name="CPlus" type="checkbox" class="textik" /> C++<br>
                         </div>
 
-
-                        <input name="jazyk" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" style="text-align: center;"/> <br>
+                        <input name="jazyk1" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" style="text-align: center;"/> <br>
                         <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie *" required style="text-align: center;"/> <br>
-                        <input name="jazyk1" type="text" class="kontakt-input" placeholder="Jiné programovací jazyky" /> <br>
-                        <input name="prefTechnology" type="text" class="kontakt-input" placeholder="Preferované technologie *" required /> <br>
 
                         <div class="kontakt-input">
                                 <input name="GDPR" type="checkbox" required/> Souhlasím se zpracováním GDPR<br>
