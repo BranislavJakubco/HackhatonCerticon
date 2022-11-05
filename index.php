@@ -11,7 +11,7 @@ $sp = mysqli_connect("localhost","root","","udaje");
 mysqli_query($sp, "SET NAMES'utf8';");
 
 
-$dotaz="SELECT * from udaje";
+$dotaz="SELECT udaje.id_studenta, udaje.jmeno, udaje.email, udaje.rok_ukonceni, udaje.preferovane_technologie, jazyky.jazyk from udaje inner join udaje_o_jazycích on udaje.id_studenta=udaje_o_jazycích.id_studenta left join jazyky on udaje_o_jazycích.id_jazyka=jazyky.id_jazyka ";
 $data= mysqli_query($sp,$dotaz);
 echo mysqli_error($sp);
 mysqli_close($sp);
