@@ -8,6 +8,7 @@
 <body>
 
     <?php
+    var_dump($_POST);
 if (isset($_POST['GDPR'])) {
     
 $conn = mysqli_connect("localhost", "root", "", "udaje");
