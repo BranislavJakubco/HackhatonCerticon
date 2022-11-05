@@ -8,10 +8,6 @@ ul {
   padding: 0;
 }
 
-li {
-  float: left;
-}
-
 li a {
   display: block;
   color: white;
